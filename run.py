@@ -1,0 +1,10 @@
+import os
+os.system('rm ./asteroids.out')
+os.system('g++ -c main.cpp')
+os.system('g++ -c Utilities.cpp')
+os.system('g++ -c Entities.cpp')
+os.system('g++ main.o Utilities.o Entities.o -o asteroids.out -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio')
+os.system('rm main.o')
+os.system('rm Utilities.o')
+os.system('rm Entities.o')
+os.system('./asteroids.out')
